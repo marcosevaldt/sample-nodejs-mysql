@@ -8,7 +8,8 @@
     "sequelize": "^5.21.7"
   },
   "devDependencies": {
-    "nodemon": "^1.14.12"
+    "nodemon": "^1.14.12",
+    "sqlite3": "^4.2.0"
   },
   "scripts": {
     "start": "nodemon src/server.js"
