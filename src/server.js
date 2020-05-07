@@ -1,16 +1,15 @@
 'use strict';
 
 // Constants
-const express = require('express')
 const { PORT = '3000', HOST = '0.0.0.0' } = process.env
+const express = require('express')
+const routes = require('./routes');
 
 // App
 const app = express();
 
 // Routes
-app.get('/', (req, res) => {
-  res.status(200).send('Hello World')
-});
+app.use('/', routes);
 
 // Listener
 app.listen(PORT, HOST)
