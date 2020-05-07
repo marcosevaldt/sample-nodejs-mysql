@@ -25,6 +25,10 @@ Verifique se o container do mysql está disponível:
 $ docker-compose logs mysql
 ```
 
+Execute as migrations da aplicação
+```sh
+docker exec -it api ./node_modules/.bin/sequelize db:migrate
+```
 ### Acessos
 | Nome | URL | Dados|
 | ------ | ------ |------ |
@@ -37,4 +41,11 @@ Comandos docker mais utilizados:
 $ docker stop $(docker ps -a -q)
 $ docker rm $(docker ps -a -q)
 $ docker volume rm $(docker volume ls -q)
+$ docker logs -f container_name
+```
+
+### Sequelize CLI
+Para utilizar o CLI do sequelize digite o comando abaixo, exemplo:
+```sh
+docker exec -it api ./node_modules/.bin/sequelize model:generate --name User --attributes name:string,email:string
 ```
