@@ -2,6 +2,7 @@
 
 // Constants
 const { PORT = '3000', HOST = '0.0.0.0' } = process.env
+const dotenv = require('dotenv-safe').config();
 const express = require('express')
 const routes = require('./routes');
 
