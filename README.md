@@ -39,7 +39,7 @@ docker exec -it api ./node_modules/.bin/sequelize db:migrate
 | Nome | URL | Dados|
 | ------ | ------ |------ |
 | Aplicação | http://0.0.0.0:8080 | |
-| MySQL | http://0.0.0.0:3306 | user:root senha:root |
+| MySQL | http://0.0.0.0:3307 | user:root senha:root |
 
 ### Commandos Úteis
 Comandos docker mais utilizados:
