@@ -15,6 +15,12 @@ $ git clone https://gitlab.com/folder
 $ cd folder
 ```
 
+Gere seu .env a partir do .env.example
+```sh
+$ cd folder
+$ cp .env.example .env
+```
+
 Para subir a aplicação, utilize o comando:
 ```sh
 $ docker-compose up -d 
