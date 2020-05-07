@@ -1,0 +1,39 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "acao_reacao",
+    "host": "mysql",
+    "dialect": "mysql",
+    "define": {
+      "timestamps": true,
+      "underscored": true,
+      "underscoredAll": true
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": "root",
+    "database": "acao_reacao",
+    "host": "mysql",
+    "dialect": "sqlite",
+    "storage": "./__tests__/database.sqlite",
+    "define": {
+      "timestamps": true,
+      "underscored": true,
+      "underscoredAll": true
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": "root",
+    "database": "acao_reacao",
+    "host": "mysql",
+    "dialect": "mysql",
+    "define": {
+      "timestamps": true,
+      "underscored": true,
+      "underscoredAll": true
+    }
+  }
+}
