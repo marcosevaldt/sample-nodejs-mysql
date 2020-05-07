@@ -22,6 +22,3 @@ app.get('/database', async (req, res) => {
     console.log('Unable to connect to the database:', error)
   }
 });
-
-app.listen(PORT, HOST)
-console.log(`Running on http://${HOST}:${PORT}`)
