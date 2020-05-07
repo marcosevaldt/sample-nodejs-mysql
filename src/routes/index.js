@@ -10,7 +10,10 @@ routes.get('/', (req, res) => {
 
 routes.get('/database', (req, res) => {
   const Sequelize = require('sequelize');
-  const sequelize = new Sequelize('mysql://root:root@mysql:3306/acao_reacao');
+  const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
+    host: process.env.DB_HOST,
+    dialect: process.env.DB_DIALECT,
+  });
   sequelize
   .authenticate()
   .then(() => {
