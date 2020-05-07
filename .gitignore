@@ -1,2 +1,2 @@
 node_modules
-/sql/mysql/mysql-data-dir/*
+/docker/mysql/mysql-data-dir/*
