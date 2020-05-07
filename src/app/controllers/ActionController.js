@@ -1,5 +1,3 @@
-const Model = require('../models');
-
 class ActionController
 {
   async index(req, res)

@@ -1,10 +1,10 @@
-const Model = require('../models');
+const { users } = require('../models');
 
 class UserController
 {
   async index(req, res)
   {
-    Model.users.findAll().then(data => {
+    users.findAll().then(data => {
       return res.send(data);
     }).catch(err => {
       res.status(500).send({ message: err.message || "Some error occurred while retrieving users." });
