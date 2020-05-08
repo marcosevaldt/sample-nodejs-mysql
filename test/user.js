@@ -19,11 +19,17 @@ describe('User', function() {
     chai.request('http://0.0.0.0:8080')
     .get('/users')
     .then(function (res) {
-      expect(res).to.have.status(200);
+      const arrayUsers = [{ name: 'Marcos', id: 1, email: 'marcos@email.com' }]
+      const assertUsers = res.body.map(function(user) {
+        delete user.createdAt
+        delete user.updatedAt
+        return user
+      })
+      assert.deepEqual(arrayUsers, assertUsers)
     })
     .catch(function (err) {
       throw err;
-    });
+    })
   });
 
 });
