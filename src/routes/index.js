@@ -2,6 +2,8 @@
 
 // Constants
 const routes = require('express').Router()
+
+// Controllers
 const UserController = require('../app/controllers/UserController');
 const ActionController = require('../app/controllers/ActionController');
 
