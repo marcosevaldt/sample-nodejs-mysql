@@ -38,7 +38,7 @@ docker exec -it api yarn run sequelize db:migrate
 ### Acessos
 | Nome | URL | Dados|
 | ------ | ------ |------ |
-| Aplicação | http://0.0.0.0:8080 | |
+| Aplicação | http://0.0.0.0:8080/v1 | |
 | MySQL | http://0.0.0.0:3307 | user:root senha:root |
 
 ### Commandos Úteis
