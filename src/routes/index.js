@@ -5,6 +5,10 @@ const routes = require('express').Router()
 const UserController = require('../app/controllers/UserController');
 const ActionController = require('../app/controllers/ActionController');
 
+// Middleware
+const ExampleMiddleware = require('../app/middleware/ExampleMiddleware');
+routes.use(ExampleMiddleware)
+
 // Routes
 routes.get('/', (req, res) => {
   res.status(200).json({ message: 'Hello World!' })
