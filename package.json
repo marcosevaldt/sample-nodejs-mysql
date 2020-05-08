@@ -11,10 +11,13 @@
     "sequelize-cli": "^5.5.1"
   },
   "devDependencies": {
+    "mocha": "^7.1.2",
     "nodemon": "^1.14.12",
     "sqlite3": "^4.2.0"
   },
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "nodemon src/server.js",
+    "test": "mocha",
+    "sequelize": "sequelize"
   }
 }

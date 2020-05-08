@@ -53,5 +53,11 @@ $ docker logs -f container_name
 ### Sequelize CLI
 Para utilizar o CLI do sequelize digite o comando abaixo, exemplo:
 ```sh
-docker exec -it api ./node_modules/.bin/sequelize model:generate --name User --attributes name:string,email:string
+docker exec -it api yarn run sequelize
+```
+
+### Executando Testes
+Para executar os testes basta executar o commando abaixo:
+```sh
+docker exec -it api yarn run test
 ```
