@@ -1,3 +1,4 @@
+process.env.NODE_ENV = 'test'
 const assert = require('assert')
 const { users } = require('../src/app/models')
 const chai = require('chai')
