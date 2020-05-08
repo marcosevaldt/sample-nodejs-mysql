@@ -33,7 +33,7 @@ $ docker-compose logs mysql
 
 Execute as migrations da aplicação
 ```sh
-docker exec -it api ./node_modules/.bin/sequelize db:migrate
+docker exec -it api yarn run sequelize db:migrate
 ```
 ### Acessos
 | Nome | URL | Dados|
