@@ -16,8 +16,10 @@
     "sqlite3": "^4.2.0"
   },
   "scripts": {
-    "start": "nodemon src/server.js",
-    "test": "mocha",
-    "sequelize": "sequelize"
+    "start": "nodemon src/server.js --ignore test",
+    "sequelize": "sequelize",
+    "pretest": "NODE_ENV=test sequelize db:migrate",
+    "test": "NODE_ENV=test mocha",
+    "posttest": "NODE_ENV=test sequelize db:migrate:undo:all"
   }
 }

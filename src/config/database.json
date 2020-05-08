@@ -17,7 +17,7 @@
     "database": "docker",
     "host": "mysql",
     "dialect": "sqlite",
-    "storage": "./__tests__/database.sqlite",
+    "storage": "./test/database.sqlite",
     "define": {
       "timestamps": true,
       "underscored": true,
