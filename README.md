@@ -57,7 +57,7 @@ docker exec -it api yarn run sequelize
 ```
 
 ### Executando Testes
-Para executar os testes basta executar o commando abaixo:
+Para executar os testes é necessário alterar no .env o parametro para NODE_ENV=test e executar o commando abaixo:
 ```sh
 docker exec -it api yarn run test
 ```
