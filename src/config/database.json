@@ -12,10 +12,6 @@
     }
   },
   "test": {
-    "username": "root",
-    "password": "root",
-    "database": "docker",
-    "host": "mysql",
     "dialect": "sqlite",
     "storage": "./test/database.sqlite",
     "define": {
